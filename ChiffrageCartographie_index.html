@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimation de coût pour cartographie des achats</title>
+    <link rel="stylesheet" href="ChiffrageCartographie_styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Estimation de coût</h2>
+    <form id="estimateForm">
+        <label for="duree_projet">Durée du Projet (en jours):</label>
+        <input type="number" id="duree_projet" required><br><br>
+
+        <label for="taux_journalier_moyen">Taux Journalier Moyen (en euros):</label>
+        <input type="number" id="taux_journalier_moyen" required><br><br>
+
+        <label for="nb_consultants">Nombre de Consultants:</label>
+        <input type="number" id="nb_consultants" required><br><br>
+
+        <label for="CA">Chiffre d'affaires (en millions d'euros):</label>
+        <input type="number" id="CA" required><br><br>
+
+        <label for="nb_entites">Nombre d'Entités:</label>
+        <input type="number" id="nb_entites" required><br><br>
+
+        <label for="cout_outils">Coût des Outils (en euros):</label>
+        <input type="number" id="cout_outils" required><br><br>
+
+        <label for="frais_indirects">Frais Indirects (en euros):</label>
+        <input type="number" id="frais_indirects" required><br><br>
+
+        <input type="button" value="Estimer" onclick="calculateCost()">
+    </form>
+    <div id="result"></div>
+</div>
+
+<script src="ChiffrageCartographie_script.js"></script>
+</body>
+</html>
